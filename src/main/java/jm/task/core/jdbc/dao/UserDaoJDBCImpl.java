@@ -28,7 +28,8 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
     }
 
     public void dropUsersTable() {
-        String sql = "DROP TABLE IF EXISTS USERS";
+     //   String sql = "DROP TABLE IF EXISTS USERS";
+        String sql = "TRUNCATE TABLE USERS";
 
         try (Connection connection = getConnection();
              Statement stat = connection.createStatement()) {

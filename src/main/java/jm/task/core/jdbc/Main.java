@@ -31,6 +31,7 @@ public class Main {
             System.out.println(us);
         }
 
+        userService.removeUserById(3);
         userService.cleanUsersTable();
         userService.dropUsersTable();
     }
